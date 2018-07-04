@@ -41,6 +41,9 @@ namespace SceneComponent
 
             foreach (var component in scenePrefab.GetComponents<Component>())
             {
+                if (component == null)
+                    continue;
+
                 if (component is Transform)
                     continue;
 
