@@ -28,8 +28,6 @@ namespace SceneComponent
 
         void OnDisable()
         {
-            Undo.undoRedoPerformed -= InitActiveEditors;
-
             ClearActiveEditors();
 
             AssetDatabase.SaveAssets();
